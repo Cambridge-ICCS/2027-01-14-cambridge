@@ -1,9 +1,26 @@
 {% comment %}
+AI Carpentry user-novice workshops (Learning Programming with GenAI)
+{% endcomment %}
+
+
+{% if site.curriculum == "user-novice" %}
+
+<p>
+  The setup instructions for the AI Carpentry Learning Programming with GenAI
+  workshops can be found at the lesson sites:
+</p>
+<ul>
+  <li><a href="https://carpentries-incubator.github.io/llms-intro-novice/#setup">Exploring Large Language Models</a></li>
+  <li><a href="https://carpentries-incubator.github.io/coding-with-llms-novice/#setup">Learning Programming with GenAI</a></li>
+  <li><a href="https://carpentries-incubator.github.io/genai-implications-novice/#setup">Considering Implications of GenAI Use</a></li>
+</ul>
+
+{% comment %}
 Astronomy workshops
 {% endcomment %}
 
 
-{% if site.curriculum == "dc-astronomy" %}
+{% elsif site.curriculum == "dc-astronomy" %}
 
 <p>
   The setup instructions for the Data Carpentry Astronomy workshops
