@@ -11,7 +11,7 @@ humandate: "Jan 14-15, 2027"    # human-readable dates for the workshop (e.g., "
 humantime: "9:00 am - 4:00 pm GMT"    # human-readable times for the workshop e.g., "9:00 am - 4:30 pm CEST (7:00 am - 2:30 pm UTC)"
 startdate: 2027-01-14      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2027-01-15        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["Toby Hodges"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+instructor: ["Samantha Ahern", "Toby Hodges"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
 helper: ["Jack Atkinson"]     # boxed, comma-separated list of helpers' names; more helpers TBC
 # email: TODO set contact address once confirmed (page shows "to-be-announced" until then)    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions
 # Optional variables
