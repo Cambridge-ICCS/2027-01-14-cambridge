@@ -246,6 +246,16 @@ def check_collaborative_notes(collaborative_notes):
 
 
 @look_for_fixme
+def check_registration(registration):
+    """
+    'registration' (the URL of an external registration/signup form,
+    e.g. a Google Form) must be a valid URL.
+    """
+
+    return bool(re.match(URL_PATTERN, registration))
+
+
+@look_for_fixme
 def check_pass(value):
     """
     This test always passes (it is used for 'checking' things like the
@@ -305,6 +315,8 @@ HANDLERS = {
                  '"{0}".'.format(DEFAULT_CONTACT_EMAIL)),
 
     'eventbrite': (False, check_eventbrite, 'Eventbrite key appears invalid'),
+
+    'registration': (False, check_registration, 'Registration URL appears invalid'),
 
     'collaborative_notes':   (False, check_collaborative_notes, 'Collaborative Notes URL appears invalid'),
 

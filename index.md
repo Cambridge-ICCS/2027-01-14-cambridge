@@ -17,6 +17,7 @@ helper: ["Jack Atkinson"]     # boxed, comma-separated list of helpers' names; m
 # Optional variables
 collaborative_notes:  # URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
 eventbrite:           # alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
+registration: "https://forms.gle/q3ZmGaYg1DdMkKqj8"    # URL of the external registration/signup form (e.g., a Google Form) if not using Eventbrite
 what3words:           # what3words (https://what3words.com) address of the workshop venue, without leading slashes e.g. "globe.lessening.computers"
 # DON'T CHANGE THIS
 layout: workshop
@@ -61,6 +62,34 @@ And run 'make workshop-check' *before* committing to make sure that changes are 
 It looks like you are setting up a website for an AI Carpentry curriculum but you haven't specified the curriculum type in the <code>_config.yml</code> file (current value in <code>_config.yml</code>: "<strong>{{ site.curriculum }}</strong>", possible values: <code>user-novice</code>, <code>user-cp</code>, <code>developer</code>. After editing this file, you need to run <code>make serve</code> again to see the changes reflected.
 </div>
 {% endunless %}
+{% endif %}
+
+
+{% comment %}
+REGISTRATION
+
+This block links to the external registration/signup form if
+'registration' has been set in the header (e.g., a Google Form).
+You can delete it if you are not using an external form, or leave
+it in, since it will not be displayed if the 'registration' field
+in the header is not set.
+{% endcomment %}
+
+{% if page.registration %}
+<div class="card mb-2">
+  <h5 class="card-header">Registration</h5>
+  <div class="card-body text-center">
+    <p>
+      <strong>Interested in attending this workshop?</strong>
+      Please fill in the signup form to register your interest.
+    </p>
+    <p>
+      <a href="{{ page.registration }}">
+        <button type="button" class="btn btn-primary">Sign up for the workshop</button>
+      </a>
+    </p>
+  </div>
+</div>
 {% endif %}
 
 

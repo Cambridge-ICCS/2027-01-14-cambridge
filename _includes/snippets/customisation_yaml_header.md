@@ -99,6 +99,11 @@ The header may optionally define the following:
   If you are using Eventbrite, the Carpentries Regional Coordinators will give this to you.
   If you are using something else, you may delete this line.
 
+`registration`
+: The full URL of an external registration/signup form (e.g., a Google Form) **given as a string in double quotes**.
+  A "Sign up" button linking to this URL will be shown near the top of the home page.
+  Use this instead of `eventbrite` if you handle registration with your own form; you may delete this line if you are not using an external form.
+
 `what3words`
 : The [what3words](https://what3words.com) address for the workshop venue.
   What3words divides the world into 3x3m squares and assigns each a unique address consisting of three words separated by dots, allowing users to specify locations precisely.
